@@ -1,120 +1,438 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ad1tyaraj.dev</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="index.css">
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/logo-A.png" type="image/x-icon">
 
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
 
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="styles.css">
 
-
+   <title>Aditya Raj-Portfolio</title>
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="nav__logo">ADITYA RAJ</a>
 
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">ADITYA</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page"
-                            href="http://127.0.0.1:5500/resume%20design/resume1/Html/resume.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li>
+                  <a href="#home" class="nav__link active-link">Home</a>
+               </li>
+
+               <li>
+                  <a href="#work" class="nav__link">Work</a>
+               </li>
+
+               <li>
+                  <a href="#info" class="nav__link">My Info</a>
+               </li>
+
+               <li>
+                  <a href="#services" class="nav__link">Services</a>
+               </li>
+
+               <li>
+                  <a href="#contact" class="nav__link">Contact Me</a>
+               </li>
+
+            </ul>
+
+            <!-- close button -->
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-large-line"></i>
             </div>
-        </div>
-    </nav>
+         </div>
 
+         <!-- Toggle button -->
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+         </div>
+      </nav>
+   </header>
 
-    <!-- nevbar -->
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+         <div class="home__container container grid">
+            <img src="assets/img/Avatar4.png" alt="image" class="home__img">
 
+            <div class="home__data">
+               <h1 class="home__name">Aditya <br> Raj</h1>
+               <h3 class="home__profession">Software Developer</h3>
+            </div>
 
+            <a href="#work" class="home__scroll">
+               <div class="home__scroll-box">
+                  <i class="ri-arrow-down-line"></i>
+               </div>
 
+               <span class="home__scroll-text">Recent Works</span>
+            </a>
+         </div>
+      </section>
 
-    <div class="container1">
-        <h1>Hey 👋, I'm <br> Adi</h1>
-    </div>
+      <!--==================== WORKS ====================-->
+      <section class="work section" id="work">
+         <h2 class="section_title">RECENT WORKS</h2>
 
-
-    <div class="container2">
-        <h1>About</h1>
-        <hr>
-        <p id="para">Hi there 👋, My Name is Aditya and I'm currently pursuing a degree in Computer Science and
-            Engineering.
-            A dedicated and growth-oriented back-end developer with a strong foundation in building scalable web
-            applications using HTML, CSS, Python, and Django. I bring a proven track record of efficiently managing and
-            delivering projects, from initial planning and design through to deployment and maintenance. I am passionate
-            about staying at the forefront of industry trends and technological advancements, continuously enhancing my
-            skills to provide innovative, high-quality solutions. I thrive in dynamic environments and seek
-            opportunities with a reputable organization where I can contribute to impactful projects while furthering my
-            career development.
-        </p>
-    </div>
-
-    <div class="container3">
-        <img src="IMG_20190905_195807.jpg" alt="">
-        <h2 id="idname">Aditya Raj</h2>
-
-    </div>
-
-    <div class="cont-icon">
-        <a href="https://github.com/Ad1tyaRaj"><i><img src="github.png" alt=""></i></a>
-        <a href="https://twitter.com/ad1tya_raj_"><i><img src="twitter.png" alt=""></i></a>
-        <a href="https://www.linkedin.com/in/aditya-raj-07950a234/"><i><img src="linkedin.png" alt=""></i></a>
-        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><i><img src="email.png" alt=""></i></a>
-    </div>
-
-    <div class="project">
-        <h1>Projects</h1>
-    </div>
-
-    <hr>
+         <div class="work__container container grid">
 
 
 
-    <!-- ------------------------------------------------------ -->
 
-    <div class="commingsoon">
-        <h1>COMMING SOON...</h1>
-    </div>
+            <article class="work__card">
+               <a href="#" target="_blank" class="work__link">
+                  <h2 class="work__title">Machine Learning (work)</h2>
+                  <p class="work__description">
+                     Feature engineering is the process of transforming raw data into features that can be used by
+                     machine learning algorithms to improve model performance. It's a critical step in the machine
+                     learning pipeline, as the quality of features directly impacts the model's ability to learn and
+                     make accurate predictions.
+                  </p>
+
+                  <img src="assets/img/work-4.png" alt="image" class="work__img">
+
+                  <i class="ri-arrow-right-line"></i>
+               </a>
+            </article>
+
+            <article class="work__card">
+               <a href="https://github.com/Ad1tyaRaj/Blog-Web-apps" target="_blank" class="work__link">
+                  <h2 class="work__title">Blog-Web-apps
+                  </h2>
+                  <p class="work__description">
+                     This repository contains a Django-based blog web application that allows users to create, edit, and
+                     manage blog posts, as well as interact with content through comments. The app features user
+                     authentication, category filtering, and a clean, responsive design using Bootstrap.
+
+                  </p>
+
+                  <img src="assets/img/work-2.png" alt="image" class="work__img">
+
+                  <i class="ri-arrow-right-line"></i>
+               </a>
+            </article>
+
+            <article class="work__card">
+               <a href="https://earlysteps.pythonanywhere.com/" target="_blank" class="work__link">
+                  <h2 class="work__title">Early Step</h2>
+                  <p class="work__description">
+                     A Health based web applications which mainly focus on providing steps to be taken on crucial
+                     situations like Snakebite, drowning, coin swallow, etc.As it's a team project of two members
+                     (frontend and backend), I'm on the backend side.
+                  </p>
+
+                  <img src="assets/img/work-3.png" alt="image" class="work__img">
+
+                  <i class="ri-arrow-right-line"></i>
+               </a>
+            </article>
+
+            <article class="work__card">
+               <a href="#" target="_blank" class="work__link">
+                  <h2 class="work__title">Portfolio Website</h2>
+                  <p class="work__description">
+                     May be the one which you looking.
+                     Designed and developed a personal portfolio website to showcase my frontend development skills. The
+                     website features a modern, responsive design with smooth navigation and interactive elements. It
+                     includes sections for my projects, skills, experience, and contact information.
+                  </p>
+
+                  <img src="assets/img/work-1.png" alt="image" class="work__img">
+
+                  <i class="ri-arrow-right-line"></i>
+               </a>
+            </article>
+
+
+
+
+
+         </div>
+      </section>
+
+      <!--==================== INFO ====================-->
+      <section class="info section" id="info">
+
+         <h2 class="section__title">MY INFO</h2>
+
+         <div class="info__container container grid">
+            <!-- ABOUT -->
+            <div class="about grid">
+               <div class="about__content">
+                  <h3 class="info__title">About Me</h3>
+                  <p class="about__description">
+                     Hi there 👋, My Name is Aditya and I'm currently pursuing a degree in Computer Science and
+                     Engineering. A dedicated and growth-oriented back-end developer with a strong foundation in
+                     building scalable web applications using HTML, CSS, Python, and Django. I bring a proven track
+                     record of efficiently managing and delivering projects, from initial planning and design through to
+                     deployment and maintenance. I am passionate about staying at the forefront of industry trends and
+                     technological advancements, continuously enhancing my skills to provide innovative, high-quality
+                     solutions. I thrive in dynamic environments and seek opportunities with a reputable organization
+                     where I can contribute to impactful projects while furthering my career development.
+                  </p>
+
+                  <a href="assets/pdf/Resume-Aditya Raj.pdf" download="" target="_blank"
+                     class="button about__button">Download Resume</a>
+               </div>
+
+               <img src="assets/img/Avatar-2.png" alt="image" class="about__img">
+            </div>
+
+            <!-- EXPERIENCE -->
+            <div class="experience">
+               <h3 class="info__title">Experience</h3>
+
+               <div class="experience__content grid">
+
+                  <div class="experience__data grid"></div>
+                  <h2 class="experience__company">FIVERR </h2>
+
+                  <div>
+                     <a href="">
+                        <h3 class="experience__profession">Web Developer</h3>
+                     </a>
+                     <span class="experience__date">June 2022 – April 2024</span>
+                     <p class="experience__description">Freelance (Part-time)
+                        Managed client projects from start to finish, ensuring high-quality delivery and fostering
+                        strong client relationships on the Fiverr
+                        platform.</p>
+                  </div>
+
+                  <!-- 
+                  <div class="experience__data grid"></div>
+                  <h2 class="experience__company">Freelance Project Developer</h2>
+
+                  <div>
+                     <h3 class="experience__profession">Backend Developer</h3>
+                     <span class="experience__date">08/24 - Present</span>
+                     <p class="experience__description">As a Freelance Backend Developer, I collaborated on a
+                        client-based project to develop the web application for DHANWIN CLUB. This application serves as
+                        the digital backbone of the club, featuring an integrated payment gateway to streamline the
+                        registration and payment processes for members. My responsibilities included designing and
+                        implementing the frontend using HTML, CSS, and JavaScript, ensuring a seamless and responsive
+                        user experience. I worked closely with a backend developer who utilized Node.js, Express.js, and
+                        Django to create a robust and efficient backend system.</p>
+                  </div> -->
+               </div>
+            </div>
+
+
+            <!-- SKILLS -->
+
+            <div class="skills">
+               <h3 class="info__title">SKILLS</h3>
+
+               <div class="skills__content grid">
+                  <div class="skills__box">
+                     <img src="assets/img/info-html.svg" alt="image" class="skills__img">
+                     <span class="skills__name">HTML</span>
+                  </div>
+
+                  <div class="skills__box">
+                     <img src="assets/img/info-css.svg" alt="image" class="skills__img">
+                     <span class="skills__name">CSS</span>
+                  </div>
+
+                  <div class="skills__box">
+                     <img src="assets/img/info-python.svg" alt="image" class="skills__img">
+                     <span class="skills__name">Python</span>
+                  </div>
+
+                  <div class="skills__box">
+                     <img src="assets/img/info-sql.svg" alt="image" class="skills__img">
+                     <span class="skills__name">SQL</span>
+                  </div>
+
+                  <div class="skills__box">
+                     <img src="assets/img/info-git.svg" alt="image" class="skills__img">
+                     <span class="skills__name">Git</span>
+                  </div>
+
+                  <div class="skills__box">
+                     <img src="assets/img/info-github1.svg" alt="image" class="skills__img">
+                     <span class="skills__name">GitHub</span>
+                  </div>
+
+                  <div class="skills__box">
+                     <img src="assets/img/info-docker.svg" alt="image" class="skills__img">
+                     <span class="skills__name">Docker</span>
+                  </div>
+
+
+
+                  <div class="skills__box">
+                     <img src="assets/img/info-aws.svg" alt="image" class="skills__img">
+                     <span class="skills__name">AWS</span>
+                  </div>
+
+                  <div class="skills__box">
+                     <img src="assets/img/info-heroku.svg" alt="image" class="skills__img">
+                     <span class="skills__name">Heroku</span>
+                  </div>
+
+
+
+                  <div class="skills__box">
+                     <img src="assets/img/info-bootstrap.svg" alt="image" class="skills__img">
+                     <span class="skills__name">Bootstrap</span>
+                  </div>
+
+
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+         <h2 class="section__title">SERVICES</h2>
+
+         <div class="services__container container grid">
+            <article class="services__card">
+               <i class="ri-code-box-line services__icon"></i>
+
+               <h3 class="services__title">Web Applications</h3>
+               <p class="services__description">
+                  Building robust, scalable, and efficient websites using the latest technologies to ensure optimal
+                  performance and user experience.
+               </p>
+            </article>
+
+            <article class="services__card">
+               <i class="ri-pencil-ruler-2-line services__icon"></i>
+
+               <h3 class="services__title">Web Scraping</h3>
+               <p class="services__description">
+                  Web scraping extracts data from websites, allowing you to gather information about customers, such as
+                  their names, contact details, preferences, and purchase history. This data can be invaluable for
+                  tailoring your marketing
+               </p>
+            </article>
+
+            <article class="services__card">
+               <i class="ri-layout-2-line services__icon"></i>
+
+               <h3 class="services__title">Backend Developer</h3>
+               <p class="services__description">
+                  Backend services handle the server-side logic and data management for your personal applications. They
+                  process requests from frontend clients, interact with databases, perform calculations, and implement
+                  business logic.
+               </p>
+            </article>
+
+            <article class="services__card">
+               <i class="ri-seo-line services__icon"></i>
+
+               <h3 class="services__title">Machine Learning</h3>
+               <p class="services__description">
+                  Machine learning is a field of artificial intelligence that focuses on developing algorithms and
+                  models that allow
+                  computers to learn from data and improve their performance on a specific task without being explicitly
+                  programmed. It involves training computers on large datasets to identify patterns, make predictions,
+                  and solve complex problems.
+               </p>
+            </article>
+
+         </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+         <h2 class="section__title">CONTACT ME</h2>
+
+         <div class="contact__container grid">
+            <form action="code.adityaraj@gmail.com" class="contact__form grid" id="contact-form">
+               <div class="contact__group grid">
+
+                  <input type="" name="" placeholder="Names" required class="contact__input">
+
+                  <input type="email" name="" placeholder="Email" required class="contact__input">
+               </div>
+
+               <textarea name="" placeholder="Message" required class="contact__input contact__area"></textarea>
+
+               <button type="submit" class="button contact__button">Send Message</button>
+
+               <p class="contact__message" id="contact-message"></p>
+
+            </form>
+
+            <div class="contact__social grid">
+
+
+               <div class="skills__box">
+                  <a target="_blank" href="https://www.linkedin.com/in/aditya-raj-07950a234/?originalSubdomain=in"><img
+                        src="assets/img/info-linkedin.svg" alt="image" class="skills__img"></a>
+               </div>
+
+               <div class="skills__box">
+                  <a target="_blank"
+                     href="Https://www.instagram.com/adi__.__/profilecard/?igsh=MWJwYmwwdzNvZDhsZQ=="><img
+                        src="assets/img/info-instagram.svg" alt="image" class="skills__img"></a>
+               </div>
+
+
+               <div class="skills__box">
+                  <a target="_blank" href="https://github.com/Ad1tyaRaj"><img src="assets/img/info-github1.svg"
+                        alt="image" class="skills__img"></a>
+               </div>
+
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__container container grid">
+         <ul class="footer__links">
+            <li>
+               <a href="#home" class="footer__links">Home</a>
+            </li>
+
+            <li>
+               <a href="#work" class="footer__links">Work</a>
+            </li>
+
+            <li>
+               <a href="#info" class="footer__links">Info</a>
+            </li>
+
+         </ul>
+
+
+         <span class="footer__copy">
+            &#169; All Rights Reserved Aditya Raj
+         </span>
+      </div>
+   </footer>
+
+   <!--========== SCROLL UP ==========-->
+
+   <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+   </a>
+
+   <!--=============== SCROLLREVEAL ===============-->
+   <script src="assets/js/scrollreveal.min.js"></script>
+
+   <!--=============== EMAIL JS ===============-->
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
 </body>
 
 </html>
